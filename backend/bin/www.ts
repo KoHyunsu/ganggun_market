@@ -1,58 +1,32 @@
 #!/usr/bin/env node
+process.env.NODE_ENV = "development";
+// process.env.proxy = false;
 
-/**
- * Module dependencies.
- */
-
+// Module dependencies.
 import app from '../app';
-var debug = require('debug')('server:server');
-import http from 'http';
+import debug from 'debug';
+const config = require('../config/config.json')[process.env.NODE_ENV || 'development'];
 
-/**
- * Get port from environment and store in Express.
- */
+app.set('port', config.port || 3000);
+app.set('env', process.env.NODE_ENV);
+const port = app.get('port');
+const server: any = app.listen(app.get('port'), () => {
+  console.log('Server Listening on ' + server.address().port);
+});
 
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+// 디비 변경 시 주석 풀고 서버 재시작
+/*
+const models = require('../models');
+const sequelize = require('sequelize');
 
-/**
- * Create HTTP server.
- */
-
-var server = http.createServer(app);
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
-
-/**
- * Normalize a port into a number, string, or false.
- */
-
-function normalizePort(val: any) {
-  var port = parseInt(val, 10);
-
-  if (isNaN(port)) {
-    // named pipe
-    return val;
-  }
-
-  if (port >= 0) {
-    // port number
-    return port;
-  }
-
-  return false;
-}
+models.sequelize.sync({
+  force: true
+});
+*/
 
 /**
  * Event listener for HTTP server "error" event.
  */
-
 function onError(error: any) {
   if (error.syscall !== 'listen') {
     throw error;
@@ -80,7 +54,6 @@ function onError(error: any) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-
 function onListening() {
   var addr : any = server.address();
   var bind = typeof addr === 'string'
@@ -88,3 +61,6 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+server.on('error', onError);
+server.on('listening', onListening);
