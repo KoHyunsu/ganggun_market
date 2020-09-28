@@ -5,9 +5,10 @@ process.env.NODE_ENV = "development";
 // Module dependencies.
 import app from '../app';
 import debug from 'debug';
+import {Sequelize} from 'sequelize-typescript';
 const config = require('../config/config.json')[process.env.NODE_ENV || 'development'];
 
-app.set('port', config.port || 3000);
+app.set('port', config.port || 3001);
 app.set('env', process.env.NODE_ENV);
 const port = app.get('port');
 const server: any = app.listen(app.get('port'), () => {
@@ -15,14 +16,24 @@ const server: any = app.listen(app.get('port'), () => {
 });
 
 // 디비 변경 시 주석 풀고 서버 재시작
-/*
-const models = require('../models');
-const sequelize = require('sequelize');
 
-models.sequelize.sync({
+/*const sequelize = new Sequelize('sequelize' , 'root', '1234', {
+  host: 'localhost',
+  dialect: 'mysql',
+  define: {
+    timestamps: false
+  },
+  models: [__dirname + '../models']
+});*/
+const sequelize = new Sequelize({
+  dialect: 'sqlite',
+  database: 'movies',
+  storage: ':memory:',
+  models: [__dirname + '../models']
+});
+sequelize.sync({
   force: true
 });
-*/
 
 /**
  * Event listener for HTTP server "error" event.

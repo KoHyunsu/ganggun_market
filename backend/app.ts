@@ -84,7 +84,7 @@ app.use(
 });*/
 app.use(
   session({
-    secret: "SCG_Apply",
+    secret: "OSAM",
     proxy: true,
     // store: sessionStore,
     resave: true,
