@@ -26,10 +26,14 @@ const server: any = app.listen(app.get('port'), () => {
   models: [__dirname + '../models']
 });*/
 const sequelize = new Sequelize({
-  dialect: 'sqlite',
-  database: 'movies',
-  storage: ':memory:',
-  models: [__dirname + '../models']
+  dialect: "mysql",
+  timezone: "+09:00",
+  host: "",
+  port: 33306,
+  username: "",
+  password: "",
+  database: "",
+  models: [__dirname + '/../models']
 });
 sequelize.sync({
   force: true
