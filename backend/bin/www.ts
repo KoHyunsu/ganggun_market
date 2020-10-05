@@ -6,7 +6,7 @@ process.env.NODE_ENV = "development";
 import app from '../app';
 import debug from 'debug';
 import {Sequelize} from 'sequelize-typescript';
-const config = require('../config/config.json')[process.env.NODE_ENV || 'development'];
+const config = require("../config/config.ts")["default"][process.env.NODE_ENV || "development"];
 
 app.set('port', config.port || 8080);
 app.set('env', process.env.NODE_ENV);
@@ -17,19 +17,19 @@ const server: any = app.listen(app.get('port'), () => {
 
 // 디비 변경 시 주석 풀고 서버 재시작
 
-const sequelize = new Sequelize({
-  dialect: "mysql",
-  timezone: "+09:00",
-  host: "",
-  port: 33306,
-  username: "",
-  password: "",
-  database: "",
+/*const sequelize = new Sequelize({
+  dialect: config.db.dialect,
+  timezone: config.db.timezone,
+  host: config.db.host,
+  port: config.db.port,
+  username: config.db.username,
+  password: config.db.password,
+  database: config.db.database,
   models: [__dirname + '/../models']
 });
 sequelize.sync({
   force: true
-});
+});*/
 
 /**
  * Event listener for HTTP server "error" event.

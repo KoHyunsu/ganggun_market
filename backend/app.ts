@@ -10,7 +10,7 @@ import session from "express-session";
 // const MySQLStore = require('express-mysql-session')(session);
 // import compression from 'compression';
 
-const config = require("./config/config.json")[process.env.NODE_ENV || "development"];
+const config = require("./config/config.ts")["default"][process.env.NODE_ENV || "development"];
 
 class App {
        public application: express.Application;

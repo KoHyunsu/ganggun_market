@@ -1,7 +1,7 @@
 import multer from 'multer';
 import path from 'path';
 
-const config = require(path.join(__dirname, './config.json'))[process.env.NODE_ENV || 'development'];
+const config = require(path.join(__dirname, './config'))['default'][process.env.NODE_ENV || 'development'];
 const storage = multer.diskStorage({
   destination: (req: any, file: any, cb: any) => {
     cb(null, config.path.upload_path_index);
@@ -19,4 +19,4 @@ const upload = multer(
 
 // const upload = multer({ dest: 'uploads/', limits: {fileSize: 1024 * 1024 * 8 }});
 
-module.exports = upload;
+export default upload;

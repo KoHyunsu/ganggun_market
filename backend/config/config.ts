@@ -1,4 +1,4 @@
-{
+export default {
     "development": {
       "port": 8080,
       "db": {
