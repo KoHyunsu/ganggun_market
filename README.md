@@ -1,6 +1,7 @@
 ![logo](Images/Icon.png)
 
 #
+![Alt text](https://img.shields.io/badge/data-app-green) ![Alt text](https://img.shields.io/badge/price-%240-lightgrey)
 ![img](https://img.shields.io/github/license/osamhack2020/App_ArmyTrainer_nanglam)
 
 
