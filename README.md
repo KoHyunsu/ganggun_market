@@ -9,15 +9,21 @@
 
 <br>
 
-## 📌Notice
+## 📌 공지사항(Notice)
 - notice1
 
 - notice2
 
 - notice3
 
+<br>
 
-## 프로젝트 설명
+## 📜 프로젝트 설명(Project Description)
+-
+
+-
+
+-
 
 ## 팀소개 및 시연 동영상
 [![Video](docs/imgs/video.png)](https://www.youtube.com)
