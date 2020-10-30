@@ -19,7 +19,7 @@
 <br>
 
 ## 📜 프로젝트 설명(Project Description)
--
+- 
 
 -
 
@@ -38,7 +38,7 @@
 
 <br>
 
-## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
+## 📌 필요 사양 (Prerequisites)
 * ECMAScript 6 지원 브라우저 사용
 * 권장: Google Chrome 버젼 77 이상
 
@@ -48,8 +48,6 @@
 
 ### Frontend
  -  [React.js](https://ko.reactjs.org/)
-
-
 
 ### Backend
  - Go + [Gin](https://github.com/gin-gonic/gin)
@@ -66,7 +64,7 @@ WEB_SAMarket_SAMarket
 │  license.md
 │  readme.md
 │
-└─frontend
+├─frontend                   //react
 │   ├─.gitignore
 │   ├─.prettierrc
 │   ├─jsconfig.json
@@ -123,43 +121,60 @@ WEB_SAMarket_SAMarket
 │                ├─  LikePage.js
 │                └─  MainPage.js
 │
-└─backend
-    └─main
-        ├─java
-        │  └─com
-        │      └─armydocs
-        │          │  LoginController.java
-        │          │  MainController.java
-        │          │  SurveyController.java
-        │          │  
-        │          ├─basic
-        │          │  ├─dao	  // dao
-        │          │  ├─service	  // service
-        │          │  └─vo	  // dto
-        │          │          
-        │          ├─interceptor  // handler
-        │          └─util
-        │                  
-        └─webapp
-            │  
-            ├─resources		// static resouces
-            │  ├─bxslider
-            │  ├─css
-            │  ├─fontawesome   
-            │  ├─img
-            │  └─js
-            │          
-            └─WEB-INF
-                │  spring-servlet.xml	// servlet context
-                │  web.xml		// web deployment describer
-                │  
-                ├─jsp		// templates
-                │  │  
-                │  ├─include	// common components
-                │  └─survey	// survey components
-                │          
-                ├─spring	// spring config files
-                └─sqlmap	// sql mapper files
+├─backend                    //golang
+    ├─.gitignore
+    ├─LICENSE
+    ├─Makefile
+    ├─debug.yaml
+    ├─go.mod
+    ├─go.sum
+    ├─main.go
+    ├─docs
+    ├─api
+    │  ├─api.go
+    │  ├─auth.go
+    │  ├─chat.go
+    │  ├─comment.go
+    │  ├─error.go
+    │  ├─noti.go
+    │  ├─post.go
+    │  ├─requests.go
+    │  ├─results.go
+    │  ├─review.go
+    │  ├─unit.go
+    │  ├─upload.go
+    │  └─cuser.go
+    │
+    ├─config
+    │  ├─config.go
+    │  ├─go.mod
+    │  └─go.sum
+    │
+    ├─middleware
+    │  ├─middleware.go
+    │  ├─go.mod
+    │  └─go.sum
+    │
+    ├─models
+    │  ├─chat.go
+    │  ├─comment.go
+    │  ├─noti.go
+    │  ├─post.go
+    │  ├─image.go
+    │  ├─review.go
+    │  ├─unit.go
+    │  ├─user.go
+    │  ├─go.mod
+    │  ├─go.sum
+    │  └─modles.go
+    │
+    └─ws
+       ├─client.go
+       ├─events.go
+       ├─hub.go
+       ├─ws.go
+       ├─go.mod
+       ├─go.sum
                         
 ```
 <br>
