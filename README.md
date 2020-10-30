@@ -1,13 +1,12 @@
-# 강군마켓 
-링크 [http://samarket.kr/](http://samarket.kr/)
-
 [![Logo](docs/imgs/logo.png)](https://samarket.kr)
+# 강군마켓
+
+![Alt text](https://img.shields.io/badge/data-app-green) ![Alt text](https://img.shields.io/badge/price-%240-lightgrey)
+
 
 ### 강한 군인들만의 영내 중고거래 커뮤니티 
 
-#
-![Alt text](https://img.shields.io/badge/data-app-green) ![Alt text](https://img.shields.io/badge/price-%240-lightgrey)
-![img](https://img.shields.io/github/license/osamhack2020/App_ArmyTrainer_nanglam)
+링크 [http://samarket.kr/](http://samarket.kr/)
 
 ---
 
