@@ -5,7 +5,7 @@
 
 ### 강한 군인들만의 영내 중고거래 커뮤니티 
 
-[LINK] [http://samarket.kr/](http://samarket.kr/)
+[링크] [http://samarket.kr/](http://samarket.kr/)
 
 <br>
 
@@ -27,12 +27,12 @@
 
 <br>
 
-## 팀소개 및 시연 동영상
+## 📽️ 시연 동영상
 [![Video](docs/imgs/video.png)](https://www.youtube.com)
 
 <br>
 
-## 기능 설계
+## 🛠️ 기능 설계
  [![XD](docs/imgs/xd_proto.png)](https://www.tinyurl.com/samxdclr)
  - Adobe XD
 
@@ -60,52 +60,68 @@
 ## 파일 구조 (File Structure)
 
 ```sh
-WEB_ArmyDocs_Team
+WEB_SAMarket_SAMarket
+│  docs
 │  .gitignore
-│  pom.xml
-│  README.md
-│  init.sql   // DB queries
-│
-│
-│
+│  license.md
+│  readme.md
 │
 └─frontend
-│   └─main
-│       ├─java
-│       │  └─com
-│       │      └─armydocs
-│       │          │  LoginController.java
-│       │          │  MainController.java
-│       │          │  SurveyController.java
-│       │          │  
-│       │          ├─basic
-│       │          │  ├─dao	  // dao
-│       │          │  ├─service	  // service
-│       │          │  └─vo	  // dto
-│       │          │          
-│       │          ├─interceptor  // handler
-│       │          └─util
-│       │                  
-│       └─webapp
-│           │  
-│           ├─resources		// static resouces
-│           │  ├─bxslider
-│           │  ├─css
-│           │  ├─fontawesome   
-│           │  ├─img
-│           │  └─js
-│           │          
-│           └─WEB-INF
-│               │  spring-servlet.xml	// servlet context
-│               │  web.xml		// web deployment describer
-│               │  
-│               ├─jsp		// templates
-│               │  │  
-│               │  ├─include	// common components
-│               │  └─survey	// survey components
-│               │          
-│               ├─spring	// spring config files
-│               └─sqlmap	// sql mapper files
+│   ├─.gitignore
+│   ├─.prettierrc
+│   ├─jsconfig.json
+│   ├─package.json
+│   ├─yarn.lock
+│   ├─readme.md
+│   ├─public
+│   └─src
+│       ├─index.js
+│       ├─index.css
+│       ├─serviceWorker.js
+│       ├─setupTests.js
+│       ├─imgs
+│       ├─api
+│       │  index.js
+│       │
+│       ├─data
+│       │  chats.json
+│       │  rates.json
+│       │  replies.json
+│       │  samroads.json
+│       │  users.json
+│       │
+│       └─views
+│           ├─components
+│           │    ├─  aboutUs
+│           │    ├─  base
+│           │    ├─  chat
+│           │    ├─  header
+│           │    ├─  menubar
+│           │    ├─  post
+│           │    ├─  profile
+│           │    ├─  rate
+│           │    ├─  tag
+│           │    ├─  user
+│           │    └─ write
+│           ├─modules
+│           │    ├─  chat
+│           │    ├─  common
+│           │    ├─  friend
+│           │    ├─  samroad
+│           │    ├─  search
+│           │    ├─  sign
+│           │    ├─  animation.css
+│           │    └─  index.js
+│           └─pages    
+│                ├─  Pages.css
+│                ├─  chatPages
+│                ├─  postPages
+│                ├─  profilePages
+│                ├─  signPages
+│                ├─  tempPages
+│                ├─  index.js
+│                ├─  LikePage.js
+│                └─  MainPage.js
 │
 └─backend
     └─main
@@ -159,7 +175,7 @@ $ TBA
 
 <br>
 
-## 프로젝트 사용법 (Getting Started)
+## 🎨 프로젝트 사용법 (Getting Started)
 ```bash
 ```
 
