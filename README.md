@@ -115,6 +115,55 @@
 #
 
 
+## 파일 정보 및 목록 (File Manifest)
+
+```sh
+WEB_ArmyDocs_Team
+│  .gitignore
+│  pom.xml
+│  README.md
+│  init.sql   // DB queries
+│  
+└─src
+    └─main
+        ├─java
+        │  └─com
+        │      └─armydocs
+        │          │  LoginController.java
+        │          │  MainController.java
+        │          │  SurveyController.java
+        │          │  
+        │          ├─basic
+        │          │  ├─dao	  // dao
+        │          │  ├─service	  // service
+        │          │  └─vo	  // dto
+        │          │          
+        │          ├─interceptor  // handler
+        │          └─util
+        │                  
+        └─webapp
+            │  
+            ├─resources		// static resouces
+            │  ├─bxslider
+            │  ├─css
+            │  ├─fontawesome   
+            │  ├─img
+            │  └─js
+            │          
+            └─WEB-INF
+                │  spring-servlet.xml	// servlet context
+                │  web.xml		// web deployment describer
+                │  
+                ├─jsp		// templates
+                │  │  
+                │  ├─include	// common components
+                │  └─survey	// survey components
+                │          
+                ├─spring	// spring config files
+                └─sqlmap	// sql mapper files
+                        
+```
+
 <br/>
 <br/>
 <br/> 
