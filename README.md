@@ -57,7 +57,7 @@
 
 <br>
 
-## 파일 정보 및 목록 (File Manifest)
+## 파일 구조 (File Structure)
 
 ```sh
 WEB_ArmyDocs_Team
@@ -66,9 +66,9 @@ WEB_ArmyDocs_Team
 │  README.md
 │  init.sql   // DB queries
 │
-|
-|
-|
+│
+│
+│
 └─frontend
 │   └─main
 │       ├─java
