@@ -5,7 +5,7 @@
 
 ### 강한 군인들만의 영내 중고거래 커뮤니티 
 
-링크 [http://samarket.kr/](http://samarket.kr/)
+[LINK] [http://samarket.kr/](http://samarket.kr/)
 
 <br>
 
@@ -70,43 +70,43 @@ WEB_ArmyDocs_Team
 |
 |
 └─frontend
-|   └─main
-|       ├─java
-|       │  └─com
-|       │      └─armydocs
-|       │          │  LoginController.java
-|       │          │  MainController.java
-|       │          │  SurveyController.java
-|       │          │  
-|       │          ├─basic
-|       │          │  ├─dao	  // dao
-|       │          │  ├─service	  // service
-|       │          │  └─vo	  // dto
-|       │          │          
-|       │          ├─interceptor  // handler
-|       │          └─util
-|       │                  
-|       └─webapp
-|           │  
-|           ├─resources		// static resouces
-|           │  ├─bxslider
-|           │  ├─css
-|           │  ├─fontawesome   
-|           │  ├─img
-|           │  └─js
-|           │          
-|           └─WEB-INF
-|               │  spring-servlet.xml	// servlet context
-|               │  web.xml		// web deployment describer
-|               │  
-|               ├─jsp		// templates
-|               │  │  
-|               │  ├─include	// common components
-|               │  └─survey	// survey components
-|               │          
-|               ├─spring	// spring config files
-|               └─sqlmap	// sql mapper files
-|
+│   └─main
+│       ├─java
+│       │  └─com
+│       │      └─armydocs
+│       │          │  LoginController.java
+│       │          │  MainController.java
+│       │          │  SurveyController.java
+│       │          │  
+│       │          ├─basic
+│       │          │  ├─dao	  // dao
+│       │          │  ├─service	  // service
+│       │          │  └─vo	  // dto
+│       │          │          
+│       │          ├─interceptor  // handler
+│       │          └─util
+│       │                  
+│       └─webapp
+│           │  
+│           ├─resources		// static resouces
+│           │  ├─bxslider
+│           │  ├─css
+│           │  ├─fontawesome   
+│           │  ├─img
+│           │  └─js
+│           │          
+│           └─WEB-INF
+│               │  spring-servlet.xml	// servlet context
+│               │  web.xml		// web deployment describer
+│               │  
+│               ├─jsp		// templates
+│               │  │  
+│               │  ├─include	// common components
+│               │  └─survey	// survey components
+│               │          
+│               ├─spring	// spring config files
+│               └─sqlmap	// sql mapper files
+│
 └─backend
     └─main
         ├─java
