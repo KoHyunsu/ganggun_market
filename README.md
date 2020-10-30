@@ -1,11 +1,12 @@
 [![Logo](docs/imgs/logo.png)](https://samarket.kr)
-# 강군마켓 ![Alt text](https://img.shields.io/badge/data-web-green) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 강군마켓 
+![Alt text](https://img.shields.io/badge/data-web-green) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### 강한 군인들만의 영내 중고거래 커뮤니티 
 
 링크 [http://samarket.kr/](http://samarket.kr/)
 
-<br>
 <br>
 
 ## 📌Notice
